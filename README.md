@@ -41,6 +41,8 @@ Pour executer le programme il faut :
 
 - L’utilisateur choisit un type de chien précis puis ajoute un filtre supplémentaire sur le type d’annonce “Perdu”, et la liste s’actualise en conséquence.
 
+- Générer une erreur 500 
+
 ## Les eventuelles difficultés rencontrées 
 
 [...]
