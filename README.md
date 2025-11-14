@@ -33,7 +33,17 @@ Pour executer le programme il faut :
 
 ## Les eventuelles difficultés rencontrées 
 
-[...]
+### Scénarios — Recherche d’une annonce
+
+- L’utilisateur sélectionne uniquement la catégorie “Animaux” dans le menu sans saisir de race ni de localisation, et obtient toutes les annonces disponibles.
+
+- L’utilisateur recherche une race de chien inexistante sur la plateforme (ex. “Poméranien”) et obtient un message indiquant qu’aucune annonce ne correspond à sa recherche.
+
+- L’utilisateur recherche la race “Doberman” avec une localisation “Tremblay-en-France (25 km)” et le site lui indique qu’aucun chien ne correspond à ces critères dans cette zone.
+
+- L’utilisateur saisit une race de chien existante sur la plateforme et le site affiche correctement toutes les annonces correspondantes.
+
+- L’utilisateur choisit un type de chien précis puis ajoute un filtre supplémentaire sur le type d’annonce “Perdu”, et la liste s’actualise en conséquence.
 
 ## Auteurs
 
