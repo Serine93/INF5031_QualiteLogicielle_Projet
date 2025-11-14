@@ -29,10 +29,6 @@ Pour executer le programme il faut :
 
 ## Les scénarios testés 
 
-[...]
-
-## Les eventuelles difficultés rencontrées 
-
 ### Scénarios — Recherche d’une annonce
 
 - L’utilisateur sélectionne uniquement la catégorie “Animaux” dans le menu sans saisir de race ni de localisation, et obtient toutes les annonces disponibles.
@@ -44,6 +40,10 @@ Pour executer le programme il faut :
 - L’utilisateur saisit une race de chien existante sur la plateforme et le site affiche correctement toutes les annonces correspondantes.
 
 - L’utilisateur choisit un type de chien précis puis ajoute un filtre supplémentaire sur le type d’annonce “Perdu”, et la liste s’actualise en conséquence.
+
+## Les eventuelles difficultés rencontrées 
+
+[...]
 
 ## Auteurs
 
