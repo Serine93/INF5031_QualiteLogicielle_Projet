@@ -19,13 +19,13 @@ Nous avons choisi le site : [Un compagnon](https://www.uncompagnon.fr/) car il s
 
 Pour installer les dépendances du programme il faut : 
 
-Executez la commande ``npm install -D @playwright/test`` 
+Executez la commande ``npm install --save-dev @cucumber/cucumber@10`` 
 
-puis ``npm install --save-dev @cucumber/cucumber ts-node typescript``
+puis ``npx playwright install``
 
 Pour executer le programme il faut :
 
-[...]
+``npx cucumber-js``
 
 ## Les scénarios testés 
 
