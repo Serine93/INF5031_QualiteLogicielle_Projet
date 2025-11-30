@@ -49,7 +49,7 @@ Then('la liste des annonces s’actualise avec uniquement les annonces “Perdu�
 });
 
 
-// SCENARIO 3 (Race existante)
+// SCENARIO 3 
 When('l’utilisateur saisit la race {string}', async function (this: CustomWorld, breed: string) {
   const searchPage = new SearchPage(this.page);
   await searchPage.selectCategory("Chiens");
@@ -81,26 +81,23 @@ Then('un message indique qu’aucun chien ne correspond aux critères dans cette
 });
 
 
-// --- SCENARIO 5 (Labrador - NOUVEAU) ---
+// SCENARIO 5 
 
 
 When('l’utilisateur saisit une race existante sur la plateforme', async function (this: CustomWorld) {
   const searchPage = new SearchPage(this.page);
-  // On choisit "Chiens" puis on tape "Labrador"
   await searchPage.selectCategory("Chiens");
   await searchPage.enterBreed("Labrador retriever");
 });
 
 
 When('il ne sélectionne aucun autre filtre', async function (this: CustomWorld) {
-  // Pas d'action, on laisse les filtres par défaut
   console.log("Aucun autre filtre sélectionné.");
 });
 
 
 Then('les annonces correspondant à cette race s’affichent correctement avec un labrador retriever', async function (this: CustomWorld) {
   const searchPage = new SearchPage(this.page);
-  // On vérifie que le mot "Labrador" apparait bien dans les résultats
   await searchPage.expectBreedInResults("Labrador retriever");
 });
 

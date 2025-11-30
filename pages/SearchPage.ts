@@ -67,9 +67,6 @@ export class SearchPage {
   }
 
 
-  // --- ASSERTIONS ---
-
-
   async expectResultsVisible() {
     await expect(this.page).toHaveURL(/.*annonces\/chiens/);
   }
@@ -87,8 +84,6 @@ export class SearchPage {
 
   // NOUVELLE ASSERTION POUR LE LABRADOR
   async expectBreedInResults(breedText: string) {
-    // On vérifie que le texte de la race (ex: Labrador) est visible dans les résultats
-    // On utilise toContainText sur le body ou la liste des résultats
     await expect(this.page.locator('body')).toContainText(breedText);
   }
 }
