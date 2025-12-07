@@ -23,7 +23,7 @@ Executez la commande ``npm install --save-dev @cucumber/cucumber@10``
 
 puis ``npx playwright install``
 
-Pour executer le programme il faut :
+Pour exécuter le programme il faut :
 
 ``npx cucumber-js``
 
