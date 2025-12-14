@@ -51,7 +51,7 @@ Pour exécuter le programme il faut :
 
 ## Les eventuelles difficultés rencontrées 
 
-[...]
+Le mocking des requêtes backend a sûrement été la partie la plus difficile car on travaille avec des données simulées et pas le "réel".
 
 ## Auteurs
 
