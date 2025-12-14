@@ -43,7 +43,11 @@ Pour exécuter le programme il faut :
 
 ### Scénarios — Mock Backend Requests pour la fonction de recherche
 
-[...]
+- Le serveur retourne des données d'animaux mockées, cela valide que l'application traite correctement les réponses valides du serveur et affiche les données mockées sans erreur.
+
+- Le serveur ne retourne aucun résultat, cela vérifie que l'application gère correctement l'absence de résultats et affiche un message approprié à l'utilisateur.
+
+- Une erreur 500 est simulée sur le serveur, cela contrôle que l'application gère les erreurs serveur de manière robuste et affiche un message d'erreur convenable à l'utilisateur.
 
 ## Les eventuelles difficultés rencontrées 
 
