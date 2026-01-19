@@ -33,6 +33,7 @@ Then('aucune annonce ne doit s\'afficher', async function (this: CustomWorld) {
   await mockPage.expectPageLoaded();
 });
 
+
 // SCENARIO 3
 
 Given('la page est en mode mock avec erreur API', async function (this: CustomWorld) {
