@@ -7,7 +7,6 @@ export class CustomWorld extends World {
   context!: BrowserContext;
   page!: Page;
 
-
   constructor(options: IWorldOptions) {
     super(options);
   }
