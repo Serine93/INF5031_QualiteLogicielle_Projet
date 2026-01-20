@@ -15,7 +15,7 @@ Ce projet est un travail issu de la 5ème année en qualité logicielle.
 
 Nous avons choisi le site : [Un compagnon](https://www.uncompagnon.fr/) car il s'agit d'un site avec une connexion simple, recherche, ajout panier, ...
 
-### Installation
+## Installation
 
 Pour installer les dépendances du programme il faut : 
 
@@ -49,7 +49,7 @@ Pour exécuter le programme il faut :
 
 - Une erreur 500 est simulée sur le serveur, cela contrôle que l'application gère les erreurs serveur de manière robuste et affiche un message d'erreur convenable à l'utilisateur.
 
-## Les eventuelles difficultés rencontrées 
+## Les éventuelles difficultés rencontrées 
 
 Le mocking des requêtes backend a sûrement été la partie la plus difficile car on travaille avec des données simulées et pas le "réel".
 
