@@ -15,7 +15,7 @@ Ce projet est un travail issu de la 5ème année en qualité logicielle.
 
 Nous avons choisi le site : [Un compagnon](https://www.uncompagnon.fr/) car il s'agit d'un site avec une connexion simple, recherche, ajout panier, ...
 
-### Installation
+## Installation
 
 Pour installer les dépendances du programme il faut : 
 
