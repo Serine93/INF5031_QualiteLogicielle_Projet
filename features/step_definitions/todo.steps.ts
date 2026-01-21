@@ -5,7 +5,7 @@ import { SearchPage } from '../../pages/SearchPage';
 
 Given('l’utilisateur est sur la page de recherche d’annonces', async function (this: CustomWorld) {
   const searchPage = new SearchPage(this.page);
-  await searchPage.goto();
+  await searchPage.goTo();
 });
 
 
@@ -87,7 +87,7 @@ When('l’utilisateur saisit une race existante sur la plateforme', async functi
 });
 
 When('il ne sélectionne aucun autre filtre', async function (this: CustomWorld) {
-  console.log("Aucun autre filtre sélectionné.");
+  //console.log("Aucun autre filtre sélectionné.");
 });
 
 Then('les annonces correspondant à cette race s’affichent correctement avec un labrador retriever', async function (this: CustomWorld) {

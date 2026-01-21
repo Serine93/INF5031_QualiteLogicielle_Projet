@@ -8,7 +8,7 @@ export class SearchPage {
         this.page = page;
     }
 
-    async goto() {
+    async goTo() {
         await this.page.goto('https://www.uncompagnon.fr/');
         try {
             const cookieButton = this.page.locator('.sd-cmp-mRjLD.sd-cmp-GgdFU.sd-cmp-Jou6v').first();
