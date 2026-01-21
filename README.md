@@ -56,7 +56,7 @@ Le script de tests/discover.spec.ts montre que [Un compagnon](https://www.uncomp
 ## Les éventuelles difficultés rencontrées 
 
 Nous avons passé beaucoup de temps sur le mocking de requêtes backend, en vain (commit : af9cdaf [30/11/2025]). Nous avons, à l'aide de claude.ai, généré un script nous permettant d'analyser les endpoints du site uncompagon.fr ; nous avons découvert que le site utilise le SSR (Server-Side Rendering), c'est-à-dire que le serveur intègre directement les données à la page HTML = le client ne fait aucune requête au serveur pour récupérer les données.
-Nous avons donc décidé de mocker les résultats de recherche (chiens, vide et erreur) et de vérifier ces mocks-là (*à noter : les fonctions de génération de page HTML dans pages/HtmlMockPage.ts ont été générées par claude.ai, seule la fonction expectPageLoaded(scenario?: 'dogs' | 'empty' | 'error') a été écrite par nous-mêmes dans ce fichier*).
+Nous avons donc décidé de mocker les résultats de recherche (chiens, vide et erreur) et de vérifier ces mocks-là (*à noter : les fonctions de génération de page HTML dans pages/HtmlMockPage.ts ont été générées par claude.ai [car pas le but du projet], seule la fonction* expectPageLoaded(scenario?: 'dogs' | 'empty' | 'error') *a été écrite par nous-mêmes dans ce fichier*).
 
 ## Auteurs
 
