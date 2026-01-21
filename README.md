@@ -43,7 +43,7 @@ Pour exécuter le programme il faut :
 
 ### Scénarios — Mock Backend Requests pour la fonction de recherche
 
-Le script de tests/discover.spec.ts montre que uncompagnon.fr n'effectue AUCUN appel API pour les données relatives aux animaux et aux recherches : cela signifie que les données relatives aux animaux sont déjà intégrées dans le code HTML lorsque la page se charge (SSR : HTML chargé dans le serveur puis envoyé => le navigateur ne fait que de l'affichage, sans qu'aucune requête ne soit nécessaire). Nous avons donc mis en place une simulation de réponse HTTP au niveau de la page plutôt qu'au niveau de l'API. 
+Le script de tests/discover.spec.ts montre que [Un compagnon](https://www.uncompagnon.fr/) n'effectue AUCUN appel API pour les données relatives aux animaux et aux recherches : cela signifie que les données relatives aux animaux sont déjà intégrées dans le code HTML lorsque la page se charge (SSR : HTML chargé dans le serveur puis envoyé => le navigateur ne fait que de l'affichage, sans qu'aucune requête ne soit nécessaire). Nous avons donc mis en place une simulation de réponse HTTP au niveau de la page plutôt qu'au niveau de l'API. 
 
 *A noter : le script tests/discover.spec.ts a été généré par claude.ai.*
 
