@@ -45,7 +45,7 @@ Pour exécuter le programme il faut :
 
 Le script de tests/discover.spec.ts montre que uncompagnon.fr n'effectue AUCUN appel API pour les données relatives aux animaux et aux recherches : cela signifie que les données relatives aux animaux sont déjà intégrées dans le code HTML lorsque la page se charge (SSR : HTML chargé dans le serveur puis envoyé => le navigateur ne fait que de l'affichage, sans qu'aucune requête ne soit nécessaire). Nous avons donc mis en place une simulation de réponse HTTP au niveau de la page plutôt qu'au niveau de l'API. 
 
-**A noter : le script tests/discover.spec.ts a été généré par claude.ai."
+*A noter : le script tests/discover.spec.ts a été généré par claude.ai.*
 
 - Génération d'une page HTML avec des résultats de chiens mockés.
 
@@ -55,8 +55,8 @@ Le script de tests/discover.spec.ts montre que uncompagnon.fr n'effectue AUCUN a
 
 ## Les éventuelles difficultés rencontrées 
 
-Nous avons passé beaucoup de temps sur le mocking de requêtes backend, en vain (commit : af9cdaf [30/11/2025]). Nous avons, à l'aide de Claude.ai, généré un script nous permettant d'analyser les endpoints du site uncompagon.fr ; nous avons découvert que le site utilise le SSR (Server-Side Rendering), c'est-à-dire que le serveur intègre directement les données à la page HTML = le client ne fait aucune requête au serveur pour récupérer les données.
-Nous avons donc décidé de mocker les résultats de recherche (chiens, vide et erreur) et de vérifier ces mocks-là (**à noter : les fonctions de génération de page HTML dans pages/HtmlMockPage.ts ont été générées par Claude.ai, seule la fonction expectPageLoaded(scenario?: 'dogs' | 'empty' | 'error') a été écrite par nous-mêmes dans ce fichier"").
+Nous avons passé beaucoup de temps sur le mocking de requêtes backend, en vain (commit : af9cdaf [30/11/2025]). Nous avons, à l'aide de claude.ai, généré un script nous permettant d'analyser les endpoints du site uncompagon.fr ; nous avons découvert que le site utilise le SSR (Server-Side Rendering), c'est-à-dire que le serveur intègre directement les données à la page HTML = le client ne fait aucune requête au serveur pour récupérer les données.
+Nous avons donc décidé de mocker les résultats de recherche (chiens, vide et erreur) et de vérifier ces mocks-là (*à noter : les fonctions de génération de page HTML dans pages/HtmlMockPage.ts ont été générées par claude.ai, seule la fonction expectPageLoaded(scenario?: 'dogs' | 'empty' | 'error') a été écrite par nous-mêmes dans ce fichier*).
 
 ## Auteurs
 
