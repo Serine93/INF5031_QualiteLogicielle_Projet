@@ -15,7 +15,7 @@ When('l\'utilisateur navigue vers la page de recherche', async function (this: C
   await mockPage.goTo();
 });
 
-Then('les données mockées doivent être utilisées pour la recherche', async function (this: CustomWorld) {
+Then('une liste de chiens doit s\'afficher', async function (this: CustomWorld) {
   const mockPage = new HtmlMockPage(this.page);
   await mockPage.expectPageLoaded('dogs');
 });
@@ -41,7 +41,7 @@ Given('la page est en mode mock avec erreur API', async function (this: CustomWo
   await mockPage.setupMockWithError();
 });
 
-Then('un message d\'erreur doit être affiché', async function (this: CustomWorld) {
+Then('un message d\'erreur doit s\'afficher', async function (this: CustomWorld) {
   const mockPage = new HtmlMockPage(this.page);
   await mockPage.expectPageLoaded('error');
 });
