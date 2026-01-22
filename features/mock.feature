@@ -1,4 +1,4 @@
-Feature: Mock page HTML simulant la réponse à une recherche
+Feature: Mock d'une page HTML simulant la réponse à une recherche
 
     Scenario: La page HTML mockée retourne des résultats de chiens
         Given la page est en mode mock avec des résultats de chiens
