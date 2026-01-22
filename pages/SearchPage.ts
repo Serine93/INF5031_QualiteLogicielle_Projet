@@ -10,14 +10,17 @@ export class SearchPage {
 
     async goTo() {
         await this.page.goto('https://www.uncompagnon.fr/');
+        await this.page.waitForTimeout(2000);
         try {
-            const cookieButton = this.page.locator('.sd-cmp-mRjLD.sd-cmp-GgdFU.sd-cmp-Jou6v').first();
-            if (await cookieButton.isVisible({ timeout: 5000 })) {
-                await cookieButton.click();
-            }
-        } catch (e) {
+            const cookieButton = this.page.locator('button:visible').filter({ hasText: /accepter|accept|tout/i }).first();
+            await cookieButton.click({ timeout: 3000, force: true });
+            await this.page.waitForTimeout(1000);
+        } catch {
             console.log("Pas de cookie");
         }
+        const selectAnimals = this.page.locator('#select-animals, .select-animals');
+        await selectAnimals.waitFor({ state: 'visible', timeout: 5000 });
+        await selectAnimals.scrollIntoViewIfNeeded();
     }
 
     async selectCategory(categoryLabel: string) {
