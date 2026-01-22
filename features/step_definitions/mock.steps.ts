@@ -23,7 +23,7 @@ Then('une liste de chiens doit s\'afficher', async function (this: CustomWorld) 
 
 // SCENARIO 2
 
-Given('la page est en mode mock sans résultats', async function (this: CustomWorld) {
+Given('la page est en mode mock sans résultat', async function (this: CustomWorld) {
   const mockPage = new HtmlMockPage(this.page);
   await mockPage.setupMockWithEmptyResults();
 });
