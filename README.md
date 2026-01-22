@@ -47,11 +47,11 @@ Le script de tests/discover.spec.ts montre que [Un compagnon](https://www.uncomp
 
 *A noter : le script tests/discover.spec.ts a été généré par claude.ai.*
 
-- Test de génération d'une page HTML avec des résultats de chiens mockés (Max et Luna).
+- Test de génération d'une page HTML mockée avec des résultats de chiens (Max et Luna).
 
-- Test de génération d'une page HTML avec des résultats vides mockés.
+- Test de génération d'une page HTML mockée avec des résultats vides.
 
-- Test de génération d'une page HTML avec des erreurs mockées.
+- Test de génération d'une page HTML mockée avec des erreurs.
 
 ## Les éventuelles difficultés rencontrées 
 
