@@ -14,6 +14,7 @@ Before(async function (this: CustomWorld) {
  
   this.context = await this.browser.newContext();
   this.page = await this.context.newPage();
+  await this.page.locator('#__abconsent-cmp').waitFor({ state: 'hidden', timeout: 10000 });
 });
 
 
