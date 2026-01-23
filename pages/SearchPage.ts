@@ -16,7 +16,7 @@ export class SearchPage {
             await cookieButton.click({ timeout: 3000, force: true });
             await this.page.waitForTimeout(1000);
         } catch {
-            console.log("Pas de cookie");
+            //console.log("Pas de cookie");
         }
         const selectAnimals = this.page.locator('#select-animals, .select-animals');
         await selectAnimals.waitFor({ state: 'visible', timeout: 5000 });
