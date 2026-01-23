@@ -2,7 +2,9 @@
   "name": "inf5031_qualitelogicielle_projet",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "tests": "npx cucumber-js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
