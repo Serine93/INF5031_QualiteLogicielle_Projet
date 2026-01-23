@@ -18,6 +18,7 @@ export class SearchPage {
         } catch {
             //console.log("Pas de cookie");
         }
+        await this.page.addStyleTag({ content: '#__abconsent-cmp { display: none !important; }' });
         const selectAnimals = this.page.locator('#select-animals, .select-animals');
         await selectAnimals.waitFor({ state: 'visible', timeout: 5000 });
         await selectAnimals.scrollIntoViewIfNeeded();

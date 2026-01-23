@@ -9,12 +9,11 @@ setDefaultTimeout(60 * 1000);
 Before(async function (this: CustomWorld) {
   this.browser = await chromium.launch({
     headless: false,
-    slowMo: 1000  
+    slowMo: 1000
   });
- 
+
   this.context = await this.browser.newContext();
   this.page = await this.context.newPage();
-  await this.page.locator('#__abconsent-cmp').waitFor({ state: 'hidden', timeout: 10000 });
 });
 
 
