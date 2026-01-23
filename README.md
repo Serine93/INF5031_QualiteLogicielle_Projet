@@ -25,7 +25,7 @@ puis ``npx playwright install``
 
 Pour exécuter le programme il faut :
 
-``npx cucumber-js``
+``npx cucumber-js`` ou ``npm run tests``
 
 ## Les scénarios testés 
 
